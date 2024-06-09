@@ -47,6 +47,9 @@ This repository contains a Dockerfile that builds a custom Kali Linux Docker ima
     - Configure the following settings in the VNC client and connect to access the Kali Linux desktop environment:
       - VNC Server: localhost:5905
       - Name: my-kali
+     
+        
+    ![VNC](/image/vnc.png) 
 
 6. Connecting to Hack The Box VPN from Kali Linux
 
@@ -55,6 +58,9 @@ This repository contains a Dockerfile that builds a custom Kali Linux Docker ima
         ```
         sudo openvpn ~/work/htb.ovpn
         ```
+
+        ![VNC](/image/openvpn.png) 
+
 
 9. Stopping the Running Docker Container
 
