@@ -45,7 +45,7 @@ This repository contains a Dockerfile that builds a custom Kali Linux Docker ima
 
 6. Connecting to Hack The Box VPN from Kali Linux
 
-    - Download the OpenVPN configuration file (ovpn) from Hack The Box and place it at ~/work/htb.ovpn on your local machine. In the terminal of the Kali Linux desktop accessed via the VNC client, run the following command to establish a VPN connection from Kali Linux to Hack The Box:
+    - Download the OpenVPN configuration file (ovpn) from Hack The Box and place it at my-kali/htb.ovpn on your local machine. In the terminal of the Kali Linux desktop accessed via the VNC client, run the following command to establish a VPN connection from Kali Linux to Hack The Box:
 
         ```
         sudo openvpn ~/work/htb.ovpn
