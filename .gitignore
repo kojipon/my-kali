@@ -1,4 +1,4 @@
 .DS_Store
 *.ovpn
-!workthrough/
 workthrough/**
+!workthrough/
