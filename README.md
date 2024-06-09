@@ -1,7 +1,3 @@
-# my-kali
-This repository contains a Dockerfile that builds a custom Kali Linux Docker image specifically tailored for use with Hack The Box (HTB), an online platform for learning and practicing ethical hacking and penetration testing skills.
-
-
 # Kali Linux Dockerfile for Hack The Box
 
 This repository contains a Dockerfile that builds a custom Kali Linux Docker image specifically tailored for use with Hack The Box (HTB), an online platform for learning and practicing ethical hacking and penetration testing skills.
@@ -25,49 +21,48 @@ This repository contains a Dockerfile that builds a custom Kali Linux Docker ima
 
 1. Clone the repository:
 
-```
-git clone https://github.com/kojipon/my-kali.git
-```
+    ```
+    git clone https://github.com/kojipon/my-kali.git
+    ```
 
 2. Build the Docker image:
 
-```
-cd my-kali
-docker build -t my-kali .
-```
+    ```
+    cd my-kali
+    docker build -t my-kali .
+    ```
 
 3. Running the Container in the Background
 
-```
-docker run --cap-add=NET_ADMIN --device /dev/net/tun -d -p 5905:5900 -v ./:/home/kali/work my-kali
-```
+    ```
+    docker run --cap-add=NET_ADMIN --device /dev/net/tun -d -p 5905:5900 -v ./:/home/kali/work my-kali
+    ```
 
 4. Installing a VNC Client for Desktop Access
 
-Download and install a VNC client from the following link: https://www.realvnc.com
+    - Download the VNC client from the following link and install it on your local machine: https://www.realvnc.com
 
-5. Connecting to the Kali Linux Desktop via VNC
+6. Connecting to the Kali Linux Desktop via VNC
 
-Configure the following settings in the VNC client and connect to access the Kali Linux desktop environment:
-
-VNC Server: localhost:5905
-Name: my-kali
+    - Configure the following settings in the VNC client and connect to access the Kali Linux desktop environment:
+      - VNC Server: localhost:5905
+      - Name: my-kali
 
 6. Connecting to Hack The Box VPN from Kali Linux
 
-Download the OpenVPN configuration file (ovpn) from Hack The Box and place it at ~/work/htb.ovpn on your local machine. In the terminal of the Kali Linux desktop accessed via the VNC client, run the following command to establish a VPN connection from Kali Linux to Hack The Box:
+    - Download the OpenVPN configuration file (ovpn) from Hack The Box and place it at ~/work/htb.ovpn on your local machine. In the terminal of the Kali Linux desktop accessed via the VNC client, run the following command to establish a VPN connection from Kali Linux to Hack The Box:
 
-```
-sudo openvpn ~/work/htb.ovpn
-```
+        ```
+        sudo openvpn ~/work/htb.ovpn
+        ```
 
 9. Stopping the Running Docker Container
 
-To stop the running Docker container, execute the following command:
+    - To stop the running Docker container, execute the following command:
 
-```
-docker stop <Container ID>
-```
+        ```
+        docker stop <Container ID>
+        ```
 
 ## Disclaimer
 
