@@ -7,7 +7,10 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt full-upgrade -y
 
 # Install various tools
-RUN apt-get install -y kali-linux-core kali-linux-default kali-tools-top10 kali-tools-web kali-tools-exploitation
+RUN apt install -y kali-linux-core kali-linux-default kali-tools-top10 kali-tools-web kali-tools-exploitation
+
+# Install BurpSuite
+RUN apt install -y openjdk-21-jre openjdk-21-jre-headless burpsuite
 
 # Install VNC server
 RUN apt install -y kali-desktop-xfce x11vnc xvfb novnc dbus-x11
