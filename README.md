@@ -5,16 +5,13 @@ This repository contains a Dockerfile that builds a custom Kali Linux Docker ima
 ## Features
 
 - Xfce desktop environment pre-installed and configured as the default GUI
-- Xfce4 Terminal set as the default terminal emulator with custom prompt settings
 - VNC server (x11vnc) and web-based VNC client (noVNC) for remote desktop access
-- Zsh shell with custom prompt settings
 - Common Kali Linux tools and packages pre-installed, including:
   - kali-linux-core
   - kali-linux-default
   - kali-tools-top10
   - kali-tools-web
   - kali-tools-exploitation
-- Non-interactive mode for apt-get to avoid prompts during the build process
 - Persistent storage directory `/home/kali/work` for saving files and configurations
 
 ## Usage
