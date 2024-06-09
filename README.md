@@ -4,15 +4,10 @@ This repository contains a Dockerfile that builds a custom Kali Linux Docker ima
 
 ## Features
 
-- Xfce desktop environment pre-installed and configured as the default GUI
-- VNC server (x11vnc) and web-based VNC client (noVNC) for remote desktop access
-- Common Kali Linux tools and packages pre-installed, including:
-  - kali-linux-core
-  - kali-linux-default
-  - kali-tools-top10
-  - kali-tools-web
-  - kali-tools-exploitation
-- Persistent storage directory `/home/kali/work` for saving files and configurations
+- Configured with a simple Xfce GUI desktop environment
+- Accessible Kali Linux GUI desktop via VNC
+- Various tools for learning cybersecurity are pre-installed
+- Persistent storage directory provided for saving files and settings
 
 ## Usage
 
